@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("#nav").load("nav.html");
-  // $("#main").load('/dashboard.html');
+  $("#main").load('dashboard.html');
 
   $(document).on("click", ".dropdown-menu", function (e) {
     e.stopPropagation();
@@ -32,9 +32,9 @@ $(document).ready(function () {
 
   window.displaySubMenuPage = function (subMenuId) {
     if (subMenuId === "app_sfe_general") {
-      $("#main").load("/src/application/SFE/SFEGeneral.html");
+      $("#main").load("SFEGeneral.html");
     } else if (subMenuId === "app_sfe_dev") {
-      $("#main").load("/src/application/SFE/SFEDevelopment.html");
+      $("#main").load("SFEDevelopment.html");
     }
   };
 

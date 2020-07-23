@@ -28,13 +28,16 @@ $(document).ready(function () {
         navEle.classList.remove("active");
       }
     });
+    pageNavigate(navLinkId)
   };
 
-  window.displaySubMenuPage = function (subMenuId) {
+  window.pageNavigate = function (subMenuId) {
     if (subMenuId === "app_sfe_general") {
       $("#main").load("application/sfe/SFEGeneral.html");
     } else if (subMenuId === "app_sfe_dev") {
       $("#main").load("application/sfe/SFEDevelopment.html");
+    } else if(subMenuId === "dashboard") {
+      $("#main").load('dashboard.html');
     }
   };
 

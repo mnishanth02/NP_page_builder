@@ -1,3 +1,5 @@
+
+
 body {
     font-size: .875rem;
   }
@@ -45,10 +47,17 @@ body {
 
 
 
-  /* ************ SFE General **************** */
+  /* ************  General **************** */
   .breadcrumb-item {
     color:dimgrey;
     font-weight: 300;
+  }
+
+  .breadcrumb {
+    padding: .2rem 3rem .2rem .3em;
+  }
+  ol.breadcrumb {
+    margin-bottom: .5rem;
   }
   .breadcrumb-item.active {
     color: cornflowerblue;
@@ -62,11 +71,6 @@ body {
 
   /* ********* Side Navigation CSS */
 
-
-   /*
-   * Sidebar
-   */
-  
    .sidebar {
     position: fixed;
     top: 15px;
@@ -117,7 +121,7 @@ body {
     text-transform: uppercase;
   }
 
-  /* Nav Bar */
+  /*********** Nav Bar *****************/
 
   @media (min-width: 992px) {
     .dropdown-menu .dropdown-toggle:after {

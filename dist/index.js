@@ -32,9 +32,9 @@ $(document).ready(function () {
 
   window.displaySubMenuPage = function (subMenuId) {
     if (subMenuId === "app_sfe_general") {
-      $("#main").load("SFEGeneral.html");
+      $("#main").load("application/sfe/SFEGeneral.html");
     } else if (subMenuId === "app_sfe_dev") {
-      $("#main").load("SFEDevelopment.html");
+      $("#main").load("application/sfe/SFEDevelopment.html");
     }
   };
 

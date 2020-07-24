@@ -1,202 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <nav class="bg-light sidebar col-md-2" id="navPage">
-      <ul class="navbar-nav .sidebar-sticky">
-        <li class="nav-item">
-          <a
-            class="nav-link active"
-            href="#"
-            onclick='activeSideNav("dashboard");'
-            id="dashboard"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-home"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-              <polyline points="9 22 9 12 15 12 15 22"></polyline>
-            </svg>
-            Dashboard <span class="sr-only"></span>
+<nav class="bg-light sidebar col-md-2" id="navPage">
+  <ul class="navbar-nav .sidebar-sticky">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        href="#"
+        onclick='activeSideNav("dashboard");'
+        id="dashboard"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-home"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Dashboard <span class="sr-only"></span>
+      </a>
+    </li>
+    <li class="nav-item dropdown">
+      <a
+        class="nav-link dropdown-toggle"
+        data-toggle="dropdown"
+        href="#"
+        aria-haspopup="true"
+        onclick='activeSideNav("application")'
+        id="application"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-file"
+        >
+          <path
+            d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
+          ></path>
+          <polyline points="13 2 13 9 20 9"></polyline>
+        </svg>
+        Applications
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="dropdown-item dropdown-toggle" href="#">
+            SFE
           </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            data-toggle="dropdown"
-            href="#"
-            aria-haspopup="true"
-            onclick='activeSideNav("application")'
-            id="application"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-file"
-            >
-              <path
-                d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
-              ></path>
-              <polyline points="13 2 13 9 20 9"></polyline>
-            </svg>
-            Applications
-          </a>
-          <ul class="dropdown-menu">
+          <ul class="submenu dropdown-menu">
             <li>
-              <a class="dropdown-item dropdown-toggle" href="#">
-                SFE
-              </a>
-              <ul class="submenu dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onclick="pageNavigate('app_sfe_general')"
-                    >General</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onclick="pageNavigate('app_sfe_dev')"
-                    >Development</a
-                  >
-                </li>
-              </ul>
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="pageNavigate('app_sfe_general')"
+                >General</a
+              >
             </li>
             <li>
-              <a class="dropdown-item dropdown-toggle" href="#">
-                BAMR
-              </a>
-              <ul class="submenu dropdown-menu">
-                <li><a class="dropdown-item" href="#">General</a></li>
-                <li><a class="dropdown-item" href="#">Development</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-toggle" href="#">
-                MMM
-              </a>
-              <ul class="submenu dropdown-menu">
-                <li><a class="dropdown-item" href="#">General</a></li>
-                <li><a class="dropdown-item" href="#">Development</a></li>
-              </ul>
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="pageNavigate('app_sfe_dev')"
+                >Development</a
+              >
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a
-            href="#"
-            onclick='activeSideNav("technology")'
-            id="technology"
-            class="nav-link dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-shopping-cart"
-            >
-              <circle cx="9" cy="21" r="1"></circle>
-              <circle cx="20" cy="21" r="1"></circle>
-              <path
-                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
-              ></path>
-            </svg>
-            Technology
+        <li>
+          <a class="dropdown-item dropdown-toggle" href="#">
+            BAMR
           </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item dropdown-toggle" href="#">
-                Java
-              </a>
-              <ul class="submenu dropdown-menu">
-                <li><a class="dropdown-item" href="#">General</a></li>
-                <li><a class="dropdown-item" href="#">Development</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-toggle" href="#">
-                DOT NET
-              </a>
-              <ul class="submenu dropdown-menu">
-                <li><a class="dropdown-item" href="#">General</a></li>
-                <li><a class="dropdown-item" href="#">Development</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-toggle" href="#">
-                EPDB
-              </a>
-              <ul class="submenu dropdown-menu">
-                <li><a class="dropdown-item" href="#">General</a></li>
-                <li><a class="dropdown-item" href="#">Development</a></li>
-              </ul>
-            </li>
+          <ul class="submenu dropdown-menu">
+            <li><a class="dropdown-item" href="#"  onclick="pageNavigate('app_bamr_general')">General</a></li>
+            <li><a class="dropdown-item" href="#"  onclick="pageNavigate('app_bamr_dev')">Development</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-            onclick='activeSideNav("generalLinks")'
-            id="generalLinks"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-bar-chart-2"
-            >
-              <line x1="18" y1="20" x2="18" y2="10"></line>
-              <line x1="12" y1="20" x2="12" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="14"></line>
-            </svg>
-            General Links
+        <li>
+          <a class="dropdown-item dropdown-toggle" href="#">
+            MMM
           </a>
+          <ul class="submenu dropdown-menu">
+            <li><a class="dropdown-item" href="#"  onclick="pageNavigate('app_mmm_general')">General</a></li>
+            <li><a class="dropdown-item" href="#"  onclick="pageNavigate('app_mmm_dev')">Development</a></li>
+          </ul>
         </li>
       </ul>
-
-      <h6
-        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
+    </li>
+    <li class="nav-item">
+      <a
+        href="#"
+        onclick='activeSideNav("technology")'
+        id="technology"
+        class="nav-link dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
       >
-        <span>Sub Heading</span>
-      </h6>
-      <!-- <ul class="navbar-nav flex-column mb-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-shopping-cart"
+        >
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path
+            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+          ></path>
+        </svg>
+        Technology
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="dropdown-item dropdown-toggle" href="#">
+            Java
+          </a>
+          <ul class="submenu dropdown-menu">
+            <li><a class="dropdown-item" href="#">General</a></li>
+            <li><a class="dropdown-item" href="#">Development</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="dropdown-item dropdown-toggle" href="#">
+            DOT NET
+          </a>
+          <ul class="submenu dropdown-menu">
+            <li><a class="dropdown-item" href="#">General</a></li>
+            <li><a class="dropdown-item" href="#">Development</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="dropdown-item dropdown-toggle" href="#">
+            EPDB
+          </a>
+          <ul class="submenu dropdown-menu">
+            <li><a class="dropdown-item" href="#">General</a></li>
+            <li><a class="dropdown-item" href="#">Development</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        href="#"
+        onclick='activeSideNav("generalLinks")'
+        id="generalLinks"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-bar-chart-2"
+        >
+          <line x1="18" y1="20" x2="18" y2="10"></line>
+          <line x1="12" y1="20" x2="12" y2="4"></line>
+          <line x1="6" y1="20" x2="6" y2="14"></line>
+        </svg>
+        General Links
+      </a>
+    </li>
+  </ul>
+
+  <h6
+    class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
+  >
+    <span>Sub Heading</span>
+  </h6>
+  <!-- <ul class="navbar-nav flex-column mb-2">
   <li class="nav-item">
     <a class="nav-link" href="#">
       <svg
@@ -298,6 +291,4 @@
     </a>
   </li>
 </ul> -->
-    </nav>
-  </body>
-</html>
+</nav>

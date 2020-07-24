@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $("#nav").load("nav.html");
   $("#main").load('dashboard.html');
+  // $("#mainHeader").text('Dashboard')
 
   $(document).on("click", ".dropdown-menu", function (e) {
     e.stopPropagation();
@@ -28,6 +29,7 @@ $(document).ready(function () {
         navEle.classList.remove("active");
       }
     });
+    
     pageNavigate(navLinkId)
   };
 
@@ -36,6 +38,14 @@ $(document).ready(function () {
       $("#main").load("application/sfe/SFEGeneral.html");
     } else if (subMenuId === "app_sfe_dev") {
       $("#main").load("application/sfe/SFEDevelopment.html");
+    } else if(subMenuId === "app_bamr_general") {
+      $("#main").load("application/bamr/bamrGeneral.html");
+    } else if(subMenuId === "app_bamr_dev") {
+      $("#main").load("application/bamr/bamrDevelopment.html");
+    } else if(subMenuId === "app_mmm_general") {
+      $("#main").load("application/mmm/mmmGeneral.html");
+    } else if(subMenuId === "app_mmm_dev") {
+      $("#main").load("application/mmm/mmmDevelopment.html");
     } else if(subMenuId === "dashboard") {
       $("#main").load('dashboard.html');
     }

@@ -24,9 +24,27 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{site.baseurl}}/css/index.css"
+    />
     <title>N&P Page Builder</title>
   </head>
 
-  {{content}}
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-md-2 mr-0" href="#">N&P Page Builder</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#main_nav"
+      ></button>
+    </nav>
+
+    {{content}}
+
+    <script src="{{site.baseurl}}/js/index.js"></script>
+  </body>
 </html>
